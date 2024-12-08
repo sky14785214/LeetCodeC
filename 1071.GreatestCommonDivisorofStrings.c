@@ -43,9 +43,9 @@ char* gcdOfStrings(char* str1, char* str2) {
         return str1;
    }else{
         if (str1[index] == '\0'){
-            return gcdOfStrings(str1, str2+index);
+            return gcdOfStrings(str1, str2+index); // str2 遞迴接續找
         }else{
-            return gcdOfStrings(str1 + index, str2);
+            return gcdOfStrings(str1 + index, str2); // str1 遞迴接續找
         }
    }
 }
