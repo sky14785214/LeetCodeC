@@ -29,9 +29,9 @@ struct ListNode{
     struct ListNode *next;
 };
 struct ListNode* reverseList(struct ListNode* head) {
-    struct ListNode *prev = NULL;
-    struct ListNode *current = head;
-    struct ListNode *next = NULL;
+    struct ListNode *prev = NULL; // previous node
+    struct ListNode *current = head; // current node
+    struct ListNode *next = NULL; // next node
 
     while ((current != NULL)){
         next = current->next;
